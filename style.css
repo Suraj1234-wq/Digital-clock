@@ -4,13 +4,16 @@
     font-family: 'poppins',sans-serif;
     box-sizing: border-box;
 }
-
+ body {
+         background: linear-gradient(45deg,#08001f,#30197d);
+    }
 .hero {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(45deg,#08001f,#30197d);
     color: #fff;
     position: relative;
+
 }
 
 .container{
@@ -32,7 +35,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-size: 90px; */
     backdrop-filter: blur(40px);
 }
 
@@ -47,8 +49,6 @@
     top: -50Px;
     z-index: -1;
 }
-
-
 
 .container::after{
     content: '';
@@ -88,4 +88,24 @@
 }
 #sec::after {
     content: 'SEC';
+}
+
+@media(max-width: 780px) {
+    .hero {
+        margin-left: 100px;
+        width: 100vh;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .clock {
+        margin-left: 100px;
+        /* width: 100vh; */
+    }
 }
